@@ -1,0 +1,28 @@
+2021-03-31 15:28:06 下午 [Thread: WorkerThead-----0][ Class:io.metty.pipeline.DefaultChannelPipeline >> Method: io.metty.pipeline.DefaultChannelPipeline.onUnhandledInboundChannelActive(DefaultChannelPipeline.java:267) ]
+INFO:clent is connecting
+2021-03-31 15:28:06 下午 [Thread: WorkerThead-----0][ Class:io.metty.pipeline.DefaultChannelPipeline >> Method: io.metty.pipeline.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:242) ]
+INFO:received
+2021-03-31 15:28:06 下午 [Thread: WorkerThead-----0][ Class:io.metty.pipeline.DefaultChannelPipeline >> Method: io.metty.pipeline.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:251) ]
+INFO:connected
+2021-03-31 15:38:19 下午 [Thread: ServerThread-----0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   ServerThread-----0------start
+2021-03-31 15:38:19 下午 [Thread: WorkerThead-----0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   WorkerThead-----0------start
+2021-03-31 15:38:19 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register server channel
+2021-03-31 15:38:21 下午 [Thread: WorkerThead-----0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   WorkerThead-----0------start
+2021-03-31 15:38:21 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-03-31 15:38:21 下午 [Thread: WorkerThead-----0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-03-31 15:38:21 下午 [Thread: ServerThread-----0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:accpet a new socketchannel 
+2021-03-31 15:38:21 下午 [Thread: ServerThread-----0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-03-31 15:38:21 下午 [Thread: WorkerThead-----0][ Class:io.metty.pipeline.DefaultChannelPipeline >> Method: io.metty.pipeline.DefaultChannelPipeline.onUnhandledInboundChannelActive(DefaultChannelPipeline.java:267) ]
+INFO:clent is connecting
+2021-03-31 15:38:21 下午 [Thread: WorkerThead-----0][ Class:io.metty.pipeline.DefaultChannelPipeline >> Method: io.metty.pipeline.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:242) ]
+INFO:received
+2021-03-31 15:38:21 下午 [Thread: WorkerThead-----0][ Class:io.metty.pipeline.DefaultChannelPipeline >> Method: io.metty.pipeline.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:251) ]
+INFO:connected
