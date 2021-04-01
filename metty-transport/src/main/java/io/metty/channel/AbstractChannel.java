@@ -52,6 +52,10 @@ public abstract class AbstractChannel implements Channel {
         return this;
     }
 
+    public Channel finishConnected(){
+        return this;
+    }
+
 
 
 

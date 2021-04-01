@@ -1,5 +1,7 @@
 package io.metty.codec;
 
+import java.nio.ByteBuffer;
+
 /**
  * 描述:
  *
@@ -8,4 +10,11 @@ package io.metty.codec;
  */
 public class Cumulator {
 
+    public ByteBuffer cumulate(ByteBuffer cumulation, ByteBuffer data) {
+        ByteBuffer newCumulation = ByteBuffer.allocate(cumulation.remaining()+data.remaining());
+        newCumulation.put(cumulation);
+        newCumulation.put(data);
+        newCumulation.flip();
+        return newCumulation;
+    }
 }

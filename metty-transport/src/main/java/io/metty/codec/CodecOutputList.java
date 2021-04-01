@@ -8,4 +8,15 @@ package io.metty.codec;
  */
 public class CodecOutputList {
 
+    public static CodecOutputList newInstance() {
+        return null;
+    }
+
+    public int size() {
+        return 0;
+    }
+
+    public void clear() {
+
+    }
 }

@@ -16,7 +16,7 @@ public class OutHandler1 implements ChannelOutBoundHandler {
     @Override
     public void write(ChannelContext ctx, Object msg) throws Exception {
         String sendString = (String) msg;
-        byte[] bytes = sendString.getBytes();
+        byte[] bytes = sendString.getBytes("UTF-8");
         ByteBuffer send = ByteBuffer.allocate(bytes.length);
         send.put(bytes);
         send.flip();

@@ -2,6 +2,8 @@ package server;
 
 import io.bootstrap.NioServerBootstrap;
 import io.metty.ChannelHandler;
+import io.metty.codec.decoder.DelimiterBasedFrameDecoder;
+import io.metty.codec.decoder.LineBasedFrameDecoder;
 import io.metty.eventloop.NioBossEventLoopGroup;
 import io.metty.eventloop.NioEventLoopGroup;
 import io.metty.eventloop.NioWorkerEventLoopGroup;
@@ -26,9 +28,10 @@ public class Server {
         ((NioWorkerEventLoopGroup) workkerGroup).setBootstrap(serverBootstrap);
 
         List<ChannelHandler> channelHandlers = new ArrayList<>();
+        channelHandlers.add(new LineBasedFrameDecoder());
         channelHandlers.add(new InHandler1());
         channelHandlers.add(new InHandler2());
-        serverBootstrap.group(bossGroup,workkerGroup).bind(8081).childHandler(null).start();
+        serverBootstrap.group(bossGroup,workkerGroup).bind(8081).childHandler(channelHandlers).start();
 
     }
 

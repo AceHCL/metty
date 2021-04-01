@@ -2,8 +2,7 @@ package client;
 
 import io.metty.ChannelContext;
 import io.metty.handler.ChannelOutBoundHandler;
-
-import java.nio.channels.SelectionKey;
+import util.Util;
 
 /**
  * 描述:
@@ -15,12 +14,10 @@ public class OutHandler2 implements ChannelOutBoundHandler {
 
     @Override
     public void channelActive(ChannelContext ctx) throws Exception {
-        String msg = "";
-        for (int i = 0; i < 100 ; i++) {
-            msg = "fjaoejfioaefoiaeogoaigodafognodfnogdnsfognaodfngodfnogsfodgnosdfgno";
-            ctx.write(msg);
+        String msg = Util.a;
+        for (int i = 0; i < 1 ; i++) {
+            ctx.write(msg+"\n");
         }
-        ctx.channel().register(SelectionKey.OP_READ);
     }
 
 }

@@ -1,6 +1,9 @@
 package io.metty.channel;
 
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.IOException;
 import java.net.SocketAddress;
 import java.nio.ByteBuffer;
@@ -17,6 +20,8 @@ import java.util.Objects;
  * @create 2021-03-15 8:37 AM
  */
 public class NioSocketChannel extends AbstractNioChannel {
+
+    private final Logger logger = LoggerFactory.getLogger(NioSocketChannel.class);
 
     private static SocketChannel newSocket(){
         SocketChannel socketChannel = null;
@@ -48,6 +53,7 @@ public class NioSocketChannel extends AbstractNioChannel {
     @Override
     protected void doBind(SocketAddress localAddress) throws Exception {
         if (localAddress == null){
+            logger.warn("use default localAddress");
             localAddress = localAddress();
         }
         SocketChannel socketChannel = (SocketChannel) javaChannel();
@@ -57,6 +63,7 @@ public class NioSocketChannel extends AbstractNioChannel {
     @Override
     protected void doConnect(SocketAddress remoteAddress) throws Exception {
         if (remoteAddress == null){
+            logger.warn("use default remoteAddress");
             remoteAddress = remoteAddress();
         }
         SocketChannel socketChannel = (SocketChannel) javaChannel();
@@ -78,8 +85,6 @@ public class NioSocketChannel extends AbstractNioChannel {
         ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
         socketChannel.read(byteBuffer);
         byteBuffer.flip();
-        byte[] bytes = new byte[byteBuffer.remaining()];
-        byteBuffer.get(bytes);
         pipeline().fireChannelRead(byteBuffer);
     }
 

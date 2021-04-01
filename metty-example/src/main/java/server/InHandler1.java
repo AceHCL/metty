@@ -16,7 +16,6 @@ public class InHandler1 implements ChannelInBoundHandler {
     @Override
     public void channelRead(ChannelContext ctx, Object msg) throws Exception {
         ByteBuffer byteBuffer = (ByteBuffer) msg;
-        byteBuffer.flip();
         byte[] bytes = new byte[byteBuffer.remaining()];
         byteBuffer.get(bytes);
         String body = new String(bytes);

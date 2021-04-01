@@ -27,7 +27,7 @@ public class Client {
         List<ChannelHandler>  channelHandlers = new ArrayList<>();
         channelHandlers.add(new OutHandler1());
         channelHandlers.add(new OutHandler2());
-        nioBootstrap.group(nioEventLoopGroup).bind("127.0.0.1",8081).childHandler(null).start();
+        nioBootstrap.group(nioEventLoopGroup).bind("127.0.0.1",8081).childHandler(channelHandlers).start();
     }
 
 }
