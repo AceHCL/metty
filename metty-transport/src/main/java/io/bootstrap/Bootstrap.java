@@ -2,8 +2,10 @@ package io.bootstrap;
 
 import io.metty.ChannelHandler;
 import io.metty.NioEventLoop;
+import io.metty.channel.Channel;
 
 import java.util.List;
+import java.util.Objects;
 
 /**
  * 描述:
@@ -13,7 +15,7 @@ import java.util.List;
  */
 public interface Bootstrap {
 
-    Bootstrap childHandler(List<ChannelHandler> channelHandlers);
+    Bootstrap childHandler(ChannelHandler channelHandler);
 
     void start();
 
@@ -21,11 +23,13 @@ public interface Bootstrap {
 
     Bootstrap bind(int port);
 
-    default List<ChannelHandler> getChannelHandlers(){
+    default ChannelHandler getChannelHandler(){
         return null;
     }
 
     default NioEventLoop nextWorkerEventLoop(){return null;}
 
     default NioEventLoop nextBossEventLoop() {return null;}
+
+    Bootstrap channel(Class<? extends Channel> channelClass);
 }

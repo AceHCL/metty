@@ -12,6 +12,10 @@ import java.net.SocketAddress;
  */
 public interface ChannelHandler{
 
+    default void channelRegistered(ChannelContext ctx) throws Exception{
+        ctx.firechannelRegistered();
+    }
+
     default void handlerAdded(ChannelContext ctx) throws Exception{}
 
     default void handlerRemoved(ChannelContext ctx) throws Exception{}

@@ -1,48 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac2c7692-3406-417e-83bb-f92f9a45aa7e" name="Default Changelist" comment="init git">
-      <change afterPath="$PROJECT_DIR$/metty-example/src/main/java/util/Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/src/test/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/hp/log/debug.log_2021-03-31.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/hp/log/info.log_2021-03-31.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/hp/log/warn.log_2021-03-31.log" afterDir="false" />
+    <list default="true" id="ac2c7692-3406-417e-83bb-f92f9a45aa7e" name="Default Changelist" comment="finish: encoder ,decoder,example,init channel method&#10;todo : serializable ,protobuf">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-common/src/main/java/io/metty/util/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-common/target/classes/io/metty/executor/ExecutorFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-common/target/classes/io/metty/util/Utils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/src/main/java/example1/client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/src/main/java/example1/server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/src/main/java/example2/client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/src/main/java/example2/client/OutHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/src/main/java/example2/server/InHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/src/main/java/example2/server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/src/main/java/example3/People.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/src/main/java/example3/client/OutHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/src/main/java/example3/server/InHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example1/client/Client$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example1/client/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example1/client/OutHandler1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example1/client/OutHandler2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example1/server/InHandler1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example1/server/InHandler2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example1/server/Server$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example1/server/Server.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example2/client/Client$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example2/client/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example2/client/OutHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example2/server/InHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example2/server/Server$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example2/server/Server.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example3/People.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example3/client/Client$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example3/client/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example3/client/OutHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example3/server/InHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example3/server/Server$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example3/server/Server.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/util/Util.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/ChannelOutBoundByteHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/MessageToByteEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/encoder/DelimiterBasedFrameEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/encoder/LineBaseFrameEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/encoder/LineFieldFrameEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/others/StringDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/others/StringEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/handler/ChannelInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/handler/ChannelStateHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/handler/ChannelStateHandlerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/proto/entries/PersonMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/proto/PersonMsg.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/src/test/java/serializable/People.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/src/test/java/serializable/ProtoBufTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/src/test/java/serializable/result" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/PersonMsg.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/bootstrap/AbstractNioBootStrap$ChannelFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/bootstrap/AbstractNioBootStrap$DefaultChannelFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/ByteToMessageDecoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/ChannelInBoundByteHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/ChannelOutBoundByteHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/CodecOutputList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/Cumulator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/MessageToByteEncoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/decoder/LengthFieldBasedFrameDecoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/decoder/LineFieldFrameEncoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/others/StringDecoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/others/StringEncoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/handler/ChannelInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/handler/ChannelStateHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/handler/ChannelStateHandlerAdapter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/proto/entries/PersonMsg$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/proto/entries/PersonMsg$Person$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/proto/entries/PersonMsg$Person$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/proto/entries/PersonMsg$Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/proto/entries/PersonMsg$PersonOrBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/proto/entries/PersonMsg.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/maven-status/maven-compiler-plugin/compile/default-cli/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/maven-status/maven-compiler-plugin/compile/default-cli/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/any.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/api.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/compiler/plugin.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/descriptor.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/duration.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/empty.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/field_mask.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/source_context.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/struct.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/timestamp.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/type.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/wrappers.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-plugins/protoc-3.3.0-osx-x86_64.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/test-classes/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/test-classes/serializable/People.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metty-transport/target/test-classes/serializable/ProtoBufTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/metty/log/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/metty/log/debug.log_2021-04-01.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/src/main/java/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/src/main/java/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/src/main/java/client/OutHandler1.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/src/main/java/client/OutHandler1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/src/main/java/client/OutHandler2.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/src/main/java/client/OutHandler2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/src/main/java/server/InHandler1.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/src/main/java/server/InHandler1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/src/main/java/server/InHandler2.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/src/main/java/server/InHandler2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/src/main/java/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/src/main/java/server/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/target/classes/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/target/classes/client/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/target/classes/client/OutHandler1.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/target/classes/client/OutHandler1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/target/classes/client/OutHandler2.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/target/classes/client/OutHandler2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/target/classes/server/InHandler1.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/target/classes/server/InHandler1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/target/classes/server/InHandler2.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/target/classes/server/InHandler2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/target/classes/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/target/classes/server/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-example/src/main/java/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/src/main/java/example3/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-example/src/main/java/client/OutHandler1.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/src/main/java/example1/client/OutHandler1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-example/src/main/java/client/OutHandler2.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/src/main/java/example1/client/OutHandler2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-example/src/main/java/server/InHandler1.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/src/main/java/example1/server/InHandler1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-example/src/main/java/server/InHandler2.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/src/main/java/example1/server/InHandler2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-example/src/main/java/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/src/main/java/example3/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-example/target/classes/client/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-example/target/classes/client/OutHandler1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-example/target/classes/client/OutHandler2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-example/target/classes/server/InHandler1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-example/target/classes/server/InHandler2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-example/target/classes/server/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/AbstractNioBootStrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/AbstractNioBootStrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/Bootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/NioBootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/NioBootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/NioServerBootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/NioServerBootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/ChannelContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/ChannelContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/ChannelHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/ChannelHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/ChannelPipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/ChannelPipeline.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/AbstractChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/AbstractChannel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/NioSocketChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/NioSocketChannel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/NioServerSocketChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/NioServerSocketChannel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/ByteToMessageDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/ByteToMessageDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/CodecOutputList.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/CodecOutputList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/Cumulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/Cumulator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/decoder/DelimiterBasedFrameDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/decoder/DelimiterBasedFrameDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/decoder/LineBasedFrameDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/decoder/LineBasedFrameDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/decoder/LengthFieldBasedFrameDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/decoder/LengthFieldBasedFrameDecoder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/NioBossEventLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/NioBossEventLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/NioWorkerEventLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/NioWorkerEventLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/invoke/ChannelInboundInvoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/invoke/ChannelInboundInvoker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/pipeline/DefaultChannelContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/pipeline/DefaultChannelContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/pipeline/DefaultChannelPipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/pipeline/DefaultChannelPipeline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/src/test/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/test/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/bootstrap/AbstractNioBootStrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/bootstrap/AbstractNioBootStrap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/bootstrap/Bootstrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/bootstrap/Bootstrap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/bootstrap/NioBootstrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/bootstrap/NioBootstrap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/bootstrap/NioServerBootstrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/bootstrap/NioServerBootstrap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/ChannelContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/ChannelContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/ChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/ChannelHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/ChannelPipeline.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/ChannelPipeline.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/AbstractChannel$AbstractUnsafe.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/AbstractChannel$AbstractUnsafe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/AbstractChannel.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/AbstractChannel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/NioServerSocketChannel$NioMessageUnsafe.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/NioServerSocketChannel$NioMessageUnsafe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/NioServerSocketChannel.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/NioServerSocketChannel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/NioSocketChannel$NioSocketChannelUnsafe.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/NioSocketChannel$NioSocketChannelUnsafe.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/NioSocketChannel.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/NioSocketChannel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/decoder/DelimiterBasedFrameDecoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/decoder/DelimiterBasedFrameDecoder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/decoder/LineBasedFrameDecoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/decoder/LineBasedFrameDecoder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/NioBossEventLoopGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/NioBossEventLoopGroup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/NioWorkerEventLoopGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/NioWorkerEventLoopGroup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hp/log/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hp/log/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hp/log/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hp/log/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hp/log/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hp/log/warn.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/NioBossEventLoop$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/NioBossEventLoop$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/NioBossEventLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/NioBossEventLoop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/NioWorkerEventLoop$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/NioWorkerEventLoop$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/NioWorkerEventLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/NioWorkerEventLoop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/invoke/ChannelInboundInvoker.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/invoke/ChannelInboundInvoker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/pipeline/DefaultChannelContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/pipeline/DefaultChannelContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/pipeline/DefaultChannelPipeline$HeadHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/pipeline/DefaultChannelPipeline$HeadHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/pipeline/DefaultChannelPipeline$TailHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/pipeline/DefaultChannelPipeline$TailHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/pipeline/DefaultChannelPipeline.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/pipeline/DefaultChannelPipeline.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hp/log/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hp/log/debug.log_2021-03-31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hp/log/error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hp/log/info.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hp/log/info.log_2021-03-31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hp/log/warn.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hp/log/warn.log_2021-03-31.log" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/metty-transport/target/" />
-    <ignored path="$PROJECT_DIR$/metty-example/target/" />
-    <ignored path="$PROJECT_DIR$/metty-common/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,188 +190,6 @@
     <expand />
     <select />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1871439235">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="2" />
-          <entry key="java" value="950" />
-          <entry key="properties" value="2" />
-          <entry key="xml" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="950" />
-          <entry key="Properties" value="2" />
-          <entry key="XML" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="60" />
-          <entry key="java" value="31572" />
-          <entry key="txt" value="33" />
-          <entry key="xml" value="152" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="31572" />
-          <entry key="PLAIN_TEXT" value="93" />
-          <entry key="XML" value="152" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/metty-example/src/main/java/client/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/NioSocketChannel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#737#738#0" expanded="true" />
-                <element signature="e#771#772#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/AbstractNioChannel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="13" column="56" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#771#772#0" expanded="true" />
-                <element signature="e#801#802#0" expanded="true" />
-                <element signature="e#1137#1138#0" expanded="true" />
-                <element signature="e#1186#1187#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/NioWorkerEventLoop.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="23" column="55" lean-forward="true" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/metty-example/src/main/java/server/Server.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/AbstractNioEventLoop.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="98" column="31" lean-forward="true" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/NioServerSocketChannel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="65" column="30" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1870#1871#0" expanded="true" />
-                <element signature="e#1915#1916#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/AbstractChannel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1033#1034#0" expanded="true" />
-                <element signature="e#1064#1065#0" expanded="true" />
-                <element signature="e#1306#1307#0" expanded="true" />
-                <element signature="e#1333#1334#0" expanded="true" />
-                <element signature="e#1626#1627#0" expanded="true" />
-                <element signature="e#1655#1656#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/NioBossEventLoopGroup.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="35" column="63" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/NioBossEventLoop.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="82" column="8" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -258,215 +198,132 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>flush</find>
-      <find>remoteaddress</find>
-      <find>firechannelread</find>
-      <find>bind</find>
-      <find>dobind</find>
-      <find>connect</find>
-      <find>channel</find>
-      <find>channel(</find>
-      <find>read</find>
-      <find>read()</find>
-      <find>HeadHandler</find>
-      <find>write</find>
-      <find>write</find>
-      <find>addlast</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/metty-transport/src/main/java/io/metty</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="$USER_HOME$/resources/Spring-framework" value="PREVIEW" />
-        <entry key="$USER_HOME$/resources/spring-framework-master" value="PREVIEW" />
-      </map>
-    </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/NioServerSocketChannel.java" />
-        <option value="$PROJECT_DIR$/metty-example/src/main/java/Client.java" />
-        <option value="$PROJECT_DIR$/metty-example/src/main/java/Server.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/Bootstrap.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/AbstractNioBootStrap.java" />
-        <option value="$PROJECT_DIR$/metty-example/src/test/java/Main.java" />
-        <option value="$PROJECT_DIR$/metty-example/src/main/java/InHandler1.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/ChannelHandler.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/invoke/ChannelInboundInvoker.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/ChannelContext.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/ChannelPipeline.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/pipeline/DefaultChannelContext.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/Channel.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/BossEventLoop.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/NioEventLoop.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/AbstractNioChannel.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/NioServerBootstrap.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/NioBootstrap.java" />
-        <option value="$PROJECT_DIR$/metty-example/src/main/java/OutHandler2.java" />
-        <option value="$PROJECT_DIR$/metty-example/src/main/java/OutHandler1.java" />
-        <option value="$PROJECT_DIR$/metty-example/src/main/java/InHandler2.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/LineBaseFrameDecoder.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/decoder/FixedLengthFrameDecoder.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/metty-transport/pom.xml" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/pipeline/DefaultChannelPipeline.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/NioWorkerEventLoop.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/AbstractNioEventLoop.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/NioWorkerEventLoopGroup.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/NioBossEventLoopGroup.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/DelimiterBasedFrameDecoder.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/ChannelInBoundByteHandler.java" />
-        <option value="$PROJECT_DIR$/metty-common/pom.xml" />
-        <option value="$PROJECT_DIR$/metty-transport/src/test/java/Main.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/Cumulator.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/CodecOutputList.java" />
-        <option value="$PROJECT_DIR$/metty-example/src/main/java/client/OutHandler1.java" />
-        <option value="$PROJECT_DIR$/metty-example/src/main/java/client/Client.java" />
-        <option value="$PROJECT_DIR$/metty-example/src/main/java/server/InHandler1.java" />
-        <option value="$PROJECT_DIR$/metty-example/src/main/java/Util.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/ByteToMessageDecoder.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/decoder/DelimiterBasedFrameDecoder.java" />
-        <option value="$PROJECT_DIR$/metty-example/src/main/java/util/Util.java" />
-        <option value="$PROJECT_DIR$/metty-example/src/main/java/client/OutHandler2.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/decoder/LineBasedFrameDecoder.java" />
-        <option value="$PROJECT_DIR$/metty-example/src/main/java/server/InHandler2.java" />
-        <option value="$PROJECT_DIR$/metty-example/src/main/java/server/Server.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/NioSocketChannel.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/AbstractChannel.java" />
-        <option value="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/NioBossEventLoop.java" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="$USER_HOME$/tools/maven/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="$USER_HOME$/tools/maven/apache-maven-3.6.1/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="metty-transport" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="metty-transport" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="-1920" />
-    <option name="y" value="-180" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
-  </component>
+  <component name="ProjectId" id="1qYhoJZNVRonJl9bJSRngoG9HvR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="metty-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="metty-parent" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Defa&#9;FILE&#9;file:///Users/ace-huang/idea/metty-parent/metty-transport/src/main/java/io/metty/pipeline/DefaultChannelPipeline.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1617249249899" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1617260849946" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/metty-example/src/main/java/example3" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="io.metty.codec" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/metty-example/src/main/java/example3" />
+      <recent name="$PROJECT_DIR$/metty-example/src/main/java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="example2.server" />
+      <recent name="example2.client" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/metty-transport/src/main" />
+      <recent name="$PROJECT_DIR$/metty-transport/src/main/java" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Client">
+    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example2.client.Client" />
+      <module name="metty-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example2.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="client.Client" />
+      <option name="MAIN_CLASS_NAME" value="example1.client.Client" />
       <module name="metty-example" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="metty-transport" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="Server (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example2.server.Server" />
       <module name="metty-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example2.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="server.Server" />
+      <option name="MAIN_CLASS_NAME" value="example1.server.Server" />
       <module name="metty-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example1.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProtoBufTest.powTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="metty-transport" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serializable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="serializable" />
+      <option name="MAIN_CLASS_NAME" value="serializable.ProtoBufTest" />
+      <option name="METHOD_NAME" value="powTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -474,18 +331,21 @@
     <list>
       <item itemvalue="Application.Client" />
       <item itemvalue="Application.Server" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="JUnit.ProtoBufTest.powTest" />
+      <item itemvalue="Application.Server (1)" />
+      <item itemvalue="Application.Client (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Server" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Client (1)" />
+        <item itemvalue="Application.Server (1)" />
+        <item itemvalue="JUnit.ProtoBufTest.powTest" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -498,7 +358,12 @@
       <updated>1615728138035</updated>
       <workItem from="1615728141696" duration="27843000" />
       <workItem from="1615884386396" duration="53529000" />
-      <workItem from="1616735781537" duration="86879000" />
+      <workItem from="1616735781537" duration="92836000" />
+      <workItem from="1617262610097" duration="5000" />
+      <workItem from="1617263206135" duration="1045000" />
+      <workItem from="1617264302970" duration="12672000" />
+      <workItem from="1617281499011" duration="3677000" />
+      <workItem from="1617686505241" duration="12889000" />
     </task>
     <task id="LOCAL-00001" summary="finish connect handler">
       <created>1617183402842</created>
@@ -507,675 +372,127 @@
       <option name="project" value="LOCAL" />
       <updated>1617183402844</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finish task linedelimiter and definedelimiter">
+      <created>1617249702742</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617249702742</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168251000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-1920" y="-180" width="1920" height="1080" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20979765" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6048988" weight="0.24554455" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49041533" weight="0.21386139" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.16435644" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.39510116" side_tool="true" weight="0.22772278" />
-      <window_info anchor="bottom" id="Statistic" order="9" sideWeight="0.49840257" weight="0.24851485" />
-      <window_info anchor="bottom" id="JProfiler" order="10" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.20792079" />
-      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.50145346" side_tool="true" weight="0.32960597" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" sideWeight="0.49563953" weight="0.24973376" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="leetcode" order="5" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.4985465" visible="true" weight="0.07507987" />
-      <window_info anchor="right" id="Database" order="8" sideWeight="0.4985465" weight="0.32960597" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finish connect handler" />
     <MESSAGE value="init git" />
-    <option name="LAST_COMMIT_MESSAGE" value="init git" />
+    <MESSAGE value="finish task linedelimiter and definedelimiter" />
+    <MESSAGE value="finish: encoder ,decoder,example,init channel method&#10;todo : serializable ,protobuf" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish: encoder ,decoder,example,init channel method&#10;todo : serializable ,protobuf" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1472" y="-59" key="#Project_Structure" timestamp="1617270725284">
+      <screen x="-1920" y="-180" width="1920" height="1080" />
+    </state>
+    <state x="-1472" y="-59" key="#Project_Structure/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617270725284" />
+    <state x="-1147" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1617701370466">
+      <screen x="-1920" y="-180" width="1920" height="1080" />
+    </state>
+    <state x="-1147" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617701370466" />
+    <state x="-1350" y="291" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1617696475558">
+      <screen x="-1920" y="-180" width="1920" height="1080" />
+    </state>
+    <state x="-1350" y="291" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617696475558" />
+    <state x="-1616" y="-68" key="CommitChangelistDialog2" timestamp="1617702148648">
+      <screen x="-1920" y="-180" width="1920" height="1080" />
+    </state>
+    <state x="-1616" y="-68" key="CommitChangelistDialog2/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617700887378" />
+    <state x="-1616" y="-68" key="CommitChangelistDialog2/0.23.1440.877/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617702148648" />
+    <state width="1878" height="172" key="GridCell.Tab.0.bottom" timestamp="1617700922719">
+      <screen x="-1920" y="-180" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="172" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617700922719" />
+    <state width="1878" height="88" key="GridCell.Tab.0.bottom/0.23.1440.877/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617698864613" />
+    <state width="1878" height="172" key="GridCell.Tab.0.center" timestamp="1617700922715">
+      <screen x="-1920" y="-180" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="172" key="GridCell.Tab.0.center/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617700922715" />
+    <state width="1878" height="88" key="GridCell.Tab.0.center/0.23.1440.877/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617698864610" />
+    <state width="1878" height="172" key="GridCell.Tab.0.left" timestamp="1617700922715">
+      <screen x="-1920" y="-180" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="172" key="GridCell.Tab.0.left/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617700922715" />
+    <state width="1878" height="88" key="GridCell.Tab.0.left/0.23.1440.877/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617698864608" />
+    <state width="1878" height="172" key="GridCell.Tab.0.right" timestamp="1617700922718">
+      <screen x="-1920" y="-180" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="172" key="GridCell.Tab.0.right/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617700922718" />
+    <state width="1878" height="88" key="GridCell.Tab.0.right/0.23.1440.877/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617698864612" />
+    <state width="1878" height="194" key="GridCell.Tab.1.bottom" timestamp="1617695602892">
+      <screen x="-1920" y="-180" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="194" key="GridCell.Tab.1.bottom/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617695602892" />
+    <state width="1878" height="194" key="GridCell.Tab.1.center" timestamp="1617695602890">
+      <screen x="-1920" y="-180" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="194" key="GridCell.Tab.1.center/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617695602890" />
+    <state width="1878" height="194" key="GridCell.Tab.1.left" timestamp="1617695602890">
+      <screen x="-1920" y="-180" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="194" key="GridCell.Tab.1.left/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617695602890" />
+    <state width="1878" height="194" key="GridCell.Tab.1.right" timestamp="1617695602891">
+      <screen x="-1920" y="-180" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="194" key="GridCell.Tab.1.right/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617695602891" />
+    <state x="-1372" y="102" key="IDE.errors.dialog" timestamp="1617281414587">
+      <screen x="-1920" y="-180" width="1920" height="1080" />
+    </state>
+    <state x="-1372" y="102" key="IDE.errors.dialog/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617281414587" />
+    <state x="-1422" y="22" key="Maven.ArtifactSearchDialog" timestamp="1617265007731">
+      <screen x="-1920" y="-180" width="1920" height="1080" />
+    </state>
+    <state x="-1422" y="22" key="Maven.ArtifactSearchDialog/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617265007731" />
+    <state x="-1548" y="-3" key="SettingsEditor" timestamp="1617281471418">
+      <screen x="-1920" y="-180" width="1920" height="1080" />
+    </state>
+    <state x="-1548" y="-3" key="SettingsEditor/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617281471418" />
+    <state x="-1548" y="-3" key="SettingsEditor/0.23.1440.877/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617264268291" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/metty-example/src/main/java/server/InHandler1.java</url>
+          <url>file://$PROJECT_DIR$/metty-example/src/main/java/example1/server/InHandler1.java</url>
           <line>17</line>
-          <properties />
           <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/ByteToMessageDecoder.java</url>
-          <line>44</line>
-          <properties />
-          <option name="timeStamp" value="70" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/decoder/DelimiterBasedFrameDecoder.java</url>
-          <line>45</line>
-          <properties />
-          <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/decoder/LineBasedFrameDecoder.java</url>
           <line>26</line>
-          <properties />
           <option name="timeStamp" value="72" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/decoder/LengthFieldBasedFrameDecoder.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/NioBossEventLoop.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/NioSocketChannel.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
       </breakpoints>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/NioEventLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/Bootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/ChannelPipeline.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/NioBootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/NioServerBootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/NioEventLoopGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/handler/ChannelInBoundHandlerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/AbstractNioEventLoopGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/NioWorkerEventLoopGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="36" column="77" selection-start-line="36" selection-start-column="77" selection-end-line="36" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/decoder/FixedLengthFrameDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="58" lean-forward="true" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/handler/ChannelOutBoundHandlerAdpter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/decoder/LengthFieldBasedFrameDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/handler/ChannelInBoundHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/ChannelInBoundByteHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../leetcode/src/com/test/BinarySearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/test/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/CodecOutputList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#174#175#0" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/ext/nashorn.jar!/jdk/nashorn/internal/objects/NativeString.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="358" column="22" selection-start-line="358" selection-start-column="22" selection-end-line="358" selection-end-column="22" />
-          <folding>
-            <element signature="e#13050#13051#0" expanded="true" />
-            <element signature="e#13097#13098#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="2105" column="22" selection-start-line="2105" selection-start-column="22" selection-end-line="2105" selection-end-column="22" />
-          <folding>
-            <element signature="e#99118#99119#0" expanded="true" />
-            <element signature="e#99175#99176#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="1924" column="18" selection-start-line="1924" selection-start-column="18" selection-end-line="1924" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/nio/ByteBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="686" column="25" lean-forward="true" selection-start-line="686" selection-start-column="25" selection-end-line="686" selection-end-column="25" />
-          <folding>
-            <element signature="e#19972#19973#0" expanded="true" />
-            <element signature="e#20018#20019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/nio/Buffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="390" selection-start-line="390" selection-end-line="390" />
-          <folding>
-            <element signature="e#7004#7005#0" expanded="true" />
-            <element signature="e#7035#7036#0" expanded="true" />
-            <element signature="e#12210#12211#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/nio/HeapByteBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="149" selection-start-line="149" selection-end-line="149" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/io/PrintStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="825" selection-start-line="825" selection-end-line="825" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="463" selection-start-line="463" selection-end-line="463" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/Cumulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-example/src/main/java/client/OutHandler1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-example/src/main/java/util/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="68" lean-forward="true" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-example/src/main/java/client/OutHandler2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-example/src/main/java/server/InHandler2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="64" lean-forward="true" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/decoder/DelimiterBasedFrameDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/decoder/LineBasedFrameDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-example/src/main/java/server/InHandler1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/ByteToMessageDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/ChannelHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/pipeline/DefaultChannelContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="147" selection-start-line="147" selection-end-line="147" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1514#1515#0" expanded="true" />
-            <element signature="e#1551#1552#0" expanded="true" />
-            <element signature="e#1597#1598#0" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
-            <element signature="e#1693#1694#0" expanded="true" />
-            <element signature="e#1724#1725#0" expanded="true" />
-            <element signature="e#2582#2583#0" expanded="true" />
-            <element signature="e#2663#2664#0" expanded="true" />
-            <element signature="e#2713#2714#0" expanded="true" />
-            <element signature="e#2795#2796#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/pipeline/DefaultChannelPipeline.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="139" selection-start-line="139" selection-end-line="139" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2857#2858#0" expanded="true" />
-            <element signature="e#2887#2888#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-example/src/main/java/server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-example/src/main/java/client/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/NioWorkerEventLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="23" column="55" lean-forward="true" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/AbstractNioEventLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="98" column="31" lean-forward="true" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/NioServerSocketChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="65" column="30" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1870#1871#0" expanded="true" />
-            <element signature="e#1915#1916#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/NioSocketChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/AbstractNioChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="13" column="56" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#801#802#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
-            <element signature="e#1186#1187#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/AbstractChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1033#1034#0" expanded="true" />
-            <element signature="e#1064#1065#0" expanded="true" />
-            <element signature="e#1306#1307#0" expanded="true" />
-            <element signature="e#1333#1334#0" expanded="true" />
-            <element signature="e#1626#1627#0" expanded="true" />
-            <element signature="e#1655#1656#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/NioBossEventLoopGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="35" column="63" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/NioBossEventLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="82" column="8" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>metty-transport</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: log4j:log4j:1.2.17</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

@@ -9,6 +9,7 @@ import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * 描述:
@@ -38,6 +39,7 @@ public abstract class ByteToMessageDecoder implements ChannelInBoundByteHandler,
 
     @Override
     public void channelRead(ChannelContext ctx, Object msg) throws Exception {
+        Objects.requireNonNull(msg,"msg is null");
         if (msg instanceof ByteBuffer){
             List<Object> out = new ArrayList<>();
             try {

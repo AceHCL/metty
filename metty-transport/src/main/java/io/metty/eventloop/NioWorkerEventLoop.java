@@ -49,6 +49,7 @@ public class NioWorkerEventLoop extends AbstractNioEventLoop implements WorkerEv
             if (key.isConnectable()){
                 log.info("socketchannel connected");
                 if (socketChannel.finishConnect()){
+                    nioSocketChannel.channelRegistered();
                     nioSocketChannel.channelActive();
                 }
             }

@@ -51,7 +51,8 @@ public class NioBossEventLoop extends AbstractNioEventLoop implements BossEventL
                 //新客户端
                 NioSocketChannel nioSocketChannel = nioServerSocketChannel.accept();
                 log.info("finishConnected",nioSocketChannel);
-                nioSocketChannel.pipeline().addLasts(parent.getBootstrap().getChannelHandlers());
+                nioSocketChannel.pipeline().addLast(parent.getBootstrap().getChannelHandler());
+                nioSocketChannel.channelRegistered();
                 NioWorkerEventLoop nioWorkerEventLoop = (NioWorkerEventLoop) parent.getBootstrap().nextWorkerEventLoop();
                 nioSocketChannel.bindEventLoop(nioWorkerEventLoop);
                 nioWorkerEventLoop.map.put(nioSocketChannel.getSocketChannel(),nioSocketChannel);
@@ -64,7 +65,7 @@ public class NioBossEventLoop extends AbstractNioEventLoop implements BossEventL
 
     @Override
     public void registerChannelTask(NioServerSocketChannel nioServerSocketChannel) {
-        log.info("register server channel");
+        log.info("register example1.server channel");
         final Selector selector = this.selector;
         registerTask(new Runnable() {
             @Override

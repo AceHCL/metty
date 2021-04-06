@@ -12,6 +12,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.SelectionKey;
 import java.util.List;
 
+import io.metty.invoke.ChannelInboundInvoker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -99,8 +100,29 @@ public class DefaultChannelPipeline implements ChannelPipeline {
     }
 
     @Override
+    public void remove(ChannelHandler channelHandler) {
+        DefaultChannelContext context = head;
+        DefaultChannelContext pre = head;
+        while (context != null &&context.handler() != channelHandler){
+            pre = context;
+            context = context.next;
+        }
+        if (context != null){
+            DefaultChannelContext next = context.next;
+            pre.next = next;
+            next.prex = pre;
+        }
+    }
+
+    @Override
     public final Channel channel(){
         return channel;
+    }
+
+    @Override
+    public ChannelPipeline firechannelRegistered() {
+        head.firechannelRegistered();
+        return this;
     }
 
     @Override
@@ -237,7 +259,7 @@ public class DefaultChannelPipeline implements ChannelPipeline {
         byte[] bytes = new byte[received.remaining()];
         received.get(bytes);
         String body = new String(bytes);
-        if (body.equals("client")){
+        if (body.equals("example1.client")){
             String s = "received";
             logger.info(s);
             byte[] bytes1 = s.getBytes();
@@ -257,7 +279,8 @@ public class DefaultChannelPipeline implements ChannelPipeline {
     }
 
     private void onUnhandledInboundChannelActive(ChannelContext ctx){
-        String send = "client";
+        logger.warn("not call channelactive method");
+        String send = "example1.client";
         byte[] bytes = send.getBytes();
         ByteBuffer sendBuffer = ByteBuffer.allocate(bytes.length);
         sendBuffer.put(bytes);

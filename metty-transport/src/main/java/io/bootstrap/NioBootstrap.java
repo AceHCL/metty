@@ -34,14 +34,14 @@ public class NioBootstrap extends AbstractNioBootStrap{
 
     @Override
     public void start() {
-        NioSocketChannel nioSocketChannel = new NioSocketChannel();
+        NioSocketChannel nioSocketChannel = (NioSocketChannel) factory.newChannel();
         try {
             nioSocketChannel.connect(inetSocketAddress);
         } catch (Exception e) {
             e.printStackTrace();
         }
         //addHandlers
-        nioSocketChannel.pipeline().addLasts(this.getChannelHandlers());
+        nioSocketChannel.pipeline().addLast(this.getChannelHandler());
         NioWorkerEventLoop nioWorkerEventLoop = (NioWorkerEventLoop) this.nextWorkerEventLoop();
         nioSocketChannel.bindEventLoop(nioWorkerEventLoop);
         nioWorkerEventLoop.mapPut(nioSocketChannel.getSocketChannel(),nioSocketChannel);

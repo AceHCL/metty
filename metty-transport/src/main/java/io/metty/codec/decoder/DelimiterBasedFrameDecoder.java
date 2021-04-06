@@ -1,6 +1,5 @@
 package io.metty.codec.decoder;
 
-import com.sun.deploy.util.StringUtils;
 import io.metty.ChannelContext;
 import io.metty.codec.ByteToMessageDecoder;
 import org.slf4j.Logger;
@@ -8,7 +7,6 @@ import org.slf4j.LoggerFactory;
 
 import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
-import java.util.ArrayList;
 import java.util.List;
 
 

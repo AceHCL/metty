@@ -7,6 +7,7 @@ package io.metty.invoke;
  * @create 2021-03-16 5:56 PM
  */
 public interface ChannelInboundInvoker {
+    ChannelInboundInvoker firechannelRegistered();
 
     ChannelInboundInvoker firechannelActive();
 

@@ -3,7 +3,6 @@ package io.metty;
 import io.metty.channel.Channel;
 import io.metty.invoke.ChannelInboundInvoker;
 import io.metty.invoke.ChannelOutboundInvoker;
-import io.metty.channel.NioSocketChannel;
 
 /**
  * 描述:
@@ -18,6 +17,10 @@ public interface ChannelContext extends ChannelInboundInvoker, ChannelOutboundIn
     Channel channel();
 
     ChannelPipeline pipeline();
+
+
+    @Override
+    ChannelContext firechannelRegistered();
 
     @Override
     ChannelContext fireChannelRead(Object msg);

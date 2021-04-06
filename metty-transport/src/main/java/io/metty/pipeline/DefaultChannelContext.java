@@ -6,10 +6,8 @@ import io.metty.ChannelHandler;
 import io.metty.ChannelPipeline;
 import io.metty.channel.Channel;
 import io.metty.handler.ChannelInBoundHandler;
-import io.metty.handler.ChannelOutBoundHandler;
 
 import java.net.SocketAddress;
-import java.nio.ByteBuffer;
 
 /**
  * 描述:
@@ -48,7 +46,6 @@ public class DefaultChannelContext implements ChannelContext {
             this.flag = DEFAULT_OUTBOUND;
         }
     }
-
     @Override
     public ChannelHandler handler() {
         return channelHandler;
@@ -62,6 +59,25 @@ public class DefaultChannelContext implements ChannelContext {
     @Override
     public ChannelPipeline pipeline() {
         return pipeline;
+    }
+
+    @Override
+    public ChannelContext firechannelRegistered() {
+        findAndInvokeChannelRegistered();
+        return this;
+    }
+
+    private void findAndInvokeChannelRegistered() {
+        DefaultChannelContext context = findContextInbound();
+        context.invokeChannelRegistered();
+    }
+
+    private void invokeChannelRegistered() {
+        try {
+            handler().channelRegistered(this);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

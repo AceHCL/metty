@@ -1,0 +1,642 @@
+2021-04-06 14:21:19 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:21:20 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:21:20 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:22:21 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:22:21 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:22:21 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:22:21 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:22:21 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:22:21 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:22:39 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:22:39 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:22:39 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:22:39 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:22:39 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:22:39 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:22:43 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:22:43 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:22:43 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:22:43 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:22:43 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:22:43 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:22:43 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:22:43 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:22:43 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:22:43 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:23:35 下午 [Thread: workerthread0][ Class:io.metty.codec.encoder.LineFieldFrameEncoder >> Method: io.metty.codec.encoder.LineFieldFrameEncoder.doEncode(LineFieldFrameEncoder.java:41) ]
+ERROR:contengLength 大于 表示的最大数
+2021-04-06 14:23:35 下午 [Thread: workerthread0][ Class:io.metty.codec.encoder.LineFieldFrameEncoder >> Method: io.metty.codec.encoder.LineFieldFrameEncoder.doEncode(LineFieldFrameEncoder.java:41) ]
+ERROR:contengLength 大于 表示的最大数
+2021-04-06 14:23:35 下午 [Thread: workerthread0][ Class:io.metty.codec.encoder.LineFieldFrameEncoder >> Method: io.metty.codec.encoder.LineFieldFrameEncoder.doEncode(LineFieldFrameEncoder.java:41) ]
+ERROR:contengLength 大于 表示的最大数
+2021-04-06 14:23:35 下午 [Thread: workerthread0][ Class:io.metty.codec.encoder.LineFieldFrameEncoder >> Method: io.metty.codec.encoder.LineFieldFrameEncoder.doEncode(LineFieldFrameEncoder.java:41) ]
+ERROR:contengLength 大于 表示的最大数
+2021-04-06 14:28:35 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:28:35 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:28:35 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:28:35 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:28:35 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:28:35 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:28:37 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:28:37 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:28:37 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:28:37 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:28:37 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:28:37 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:28:37 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:28:37 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:28:37 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:28:37 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:30:42 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:30:42 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:30:42 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:30:42 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:30:42 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:30:42 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:30:46 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:30:46 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:30:46 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:30:46 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:30:46 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:30:46 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:30:46 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:30:46 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:30:46 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:30:46 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:32:25 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:32:25 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:32:25 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:32:25 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:32:25 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:32:25 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:32:28 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:32:28 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:32:28 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:32:28 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:32:28 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:32:28 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:32:28 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:32:28 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:32:28 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:32:28 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:34:32 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:34:32 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:34:32 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:34:32 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:34:32 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:34:32 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:34:34 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:34:34 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:34:34 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:34:34 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:34:34 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:34:34 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:34:34 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:34:34 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:34:34 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:34:34 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:35:31 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:35:31 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:35:31 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:35:31 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:35:31 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:35:31 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:35:36 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:35:36 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:35:36 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:35:36 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:35:36 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:35:36 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:35:36 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:35:36 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:35:36 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:35:36 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:37:02 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:37:02 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:37:02 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:37:02 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:37:02 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:37:02 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:37:05 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:37:05 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:37:05 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:37:05 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:37:05 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:37:05 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:37:05 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:37:05 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:37:05 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:37:05 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:38:26 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:38:26 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:38:26 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:38:26 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:38:26 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:38:26 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:38:28 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:38:28 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:38:28 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:38:28 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:38:28 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:38:28 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:38:28 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:38:28 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:38:28 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:38:28 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:38:31 下午 [Thread: workerthread0][ Class:io.metty.codec.encoder.LineFieldFrameEncoder >> Method: io.metty.codec.decoder.LengthFieldBasedFrameDecoder.decode(LengthFieldBasedFrameDecoder.java:43) ]
+INFO:67
+2021-04-06 14:38:31 下午 [Thread: workerthread0][ Class:io.metty.codec.encoder.LineFieldFrameEncoder >> Method: io.metty.codec.decoder.LengthFieldBasedFrameDecoder.decode(LengthFieldBasedFrameDecoder.java:43) ]
+INFO:67
+2021-04-06 14:38:31 下午 [Thread: workerthread0][ Class:io.metty.codec.encoder.LineFieldFrameEncoder >> Method: io.metty.codec.decoder.LengthFieldBasedFrameDecoder.decode(LengthFieldBasedFrameDecoder.java:44) ]
+INFO:67
+2021-04-06 14:38:31 下午 [Thread: workerthread0][ Class:io.metty.codec.encoder.LineFieldFrameEncoder >> Method: io.metty.codec.decoder.LengthFieldBasedFrameDecoder.decode(LengthFieldBasedFrameDecoder.java:44) ]
+INFO:67
+2021-04-06 14:39:32 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:39:32 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:39:33 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:39:33 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:39:33 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:39:33 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:39:42 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:39:42 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:39:42 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:39:42 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:39:42 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:39:42 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:39:44 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:39:44 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:39:44 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:39:44 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:39:44 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:39:44 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:39:44 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:39:44 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:39:44 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:39:44 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:39:47 下午 [Thread: workerthread0][ Class:io.metty.codec.encoder.LineFieldFrameEncoder >> Method: io.metty.codec.decoder.LengthFieldBasedFrameDecoder.decode(LengthFieldBasedFrameDecoder.java:43) ]
+INFO:67
+2021-04-06 14:39:47 下午 [Thread: workerthread0][ Class:io.metty.codec.encoder.LineFieldFrameEncoder >> Method: io.metty.codec.decoder.LengthFieldBasedFrameDecoder.decode(LengthFieldBasedFrameDecoder.java:43) ]
+INFO:67
+2021-04-06 14:39:47 下午 [Thread: workerthread0][ Class:io.metty.codec.encoder.LineFieldFrameEncoder >> Method: io.metty.codec.decoder.LengthFieldBasedFrameDecoder.decode(LengthFieldBasedFrameDecoder.java:44) ]
+INFO:67
+2021-04-06 14:39:47 下午 [Thread: workerthread0][ Class:io.metty.codec.encoder.LineFieldFrameEncoder >> Method: io.metty.codec.decoder.LengthFieldBasedFrameDecoder.decode(LengthFieldBasedFrameDecoder.java:44) ]
+INFO:67
+2021-04-06 14:42:25 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:42:25 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:42:25 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:42:25 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:42:25 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:42:25 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:42:27 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:42:27 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:42:27 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:42:27 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:42:27 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:42:27 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:42:27 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:42:27 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:42:27 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:42:27 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:48:02 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:48:02 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:48:02 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:48:02 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:48:02 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:48:02 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:48:05 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:48:05 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:48:05 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:48:05 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:48:05 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:48:05 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:48:05 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:48:05 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:48:05 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:48:05 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:48:17 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:48:17 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 14:48:17 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:48:17 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:48:17 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:48:17 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:67) ]
+INFO:register example1.server channel
+2021-04-06 14:48:19 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:48:19 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 14:48:19 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:48:19 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:48:19 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:48:19 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 14:48:19 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:48:19 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 14:48:19 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 14:48:19 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:63) ]
+INFO:register  clientchannel
+2021-04-06 15:51:47 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 15:51:47 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 15:51:47 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 15:51:47 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 15:51:47 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:68) ]
+INFO:register example1.server channel
+2021-04-06 15:51:47 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:68) ]
+INFO:register example1.server channel
+2021-04-06 15:51:52 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 15:51:52 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 15:51:52 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 15:51:52 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 15:51:52 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 15:51:52 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 15:51:52 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 15:51:52 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 15:52:37 下午 [Thread: serverthread0][ Class:io.metty.codec.ByteToMessageDecoder >> Method: io.metty.codec.ByteToMessageDecoder.init(ByteToMessageDecoder.java:122) ]
+INFO:init delimiters
+2021-04-06 15:52:37 下午 [Thread: serverthread0][ Class:io.metty.codec.ByteToMessageDecoder >> Method: io.metty.codec.ByteToMessageDecoder.init(ByteToMessageDecoder.java:122) ]
+INFO:init delimiters
+2021-04-06 15:53:10 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 15:53:10 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 15:54:10 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 15:54:10 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 15:54:10 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 15:54:10 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 15:54:10 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:68) ]
+INFO:register example1.server channel
+2021-04-06 15:54:10 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:68) ]
+INFO:register example1.server channel
+2021-04-06 15:54:14 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 15:54:14 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 15:54:14 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 15:54:14 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 15:54:14 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 15:54:14 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 15:54:14 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 15:54:14 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 15:54:14 下午 [Thread: serverthread0][ Class:io.metty.codec.ByteToMessageDecoder >> Method: io.metty.codec.ByteToMessageDecoder.init(ByteToMessageDecoder.java:122) ]
+INFO:init delimiters
+2021-04-06 15:54:14 下午 [Thread: serverthread0][ Class:io.metty.codec.ByteToMessageDecoder >> Method: io.metty.codec.ByteToMessageDecoder.init(ByteToMessageDecoder.java:122) ]
+INFO:init delimiters
+2021-04-06 15:54:14 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 15:54:14 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 16:13:52 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 16:13:52 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 16:13:52 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 16:13:52 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 16:13:52 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:68) ]
+INFO:register example1.server channel
+2021-04-06 16:13:52 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:68) ]
+INFO:register example1.server channel
+2021-04-06 16:13:56 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 16:13:56 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 16:13:56 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 16:13:56 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 16:13:56 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 16:13:56 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 16:13:56 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 16:13:56 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 16:13:56 下午 [Thread: workerthread0][ Class:io.metty.pipeline.DefaultChannelPipeline >> Method: io.metty.pipeline.DefaultChannelPipeline.onUnhandledInboundChannelActive(DefaultChannelPipeline.java:289) ]
+INFO:clent is connecting
+2021-04-06 16:13:56 下午 [Thread: workerthread0][ Class:io.metty.pipeline.DefaultChannelPipeline >> Method: io.metty.pipeline.DefaultChannelPipeline.onUnhandledInboundChannelActive(DefaultChannelPipeline.java:289) ]
+INFO:clent is connecting
+2021-04-06 16:13:56 下午 [Thread: serverthread0][ Class:io.metty.codec.ByteToMessageDecoder >> Method: io.metty.codec.ByteToMessageDecoder.init(ByteToMessageDecoder.java:122) ]
+INFO:init delimiters
+2021-04-06 16:13:56 下午 [Thread: serverthread0][ Class:io.metty.codec.ByteToMessageDecoder >> Method: io.metty.codec.ByteToMessageDecoder.init(ByteToMessageDecoder.java:122) ]
+INFO:init delimiters
+2021-04-06 16:13:56 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 16:13:56 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 16:20:21 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 16:20:21 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 16:20:21 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 16:20:21 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 16:20:21 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:68) ]
+INFO:register example1.server channel
+2021-04-06 16:20:21 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:68) ]
+INFO:register example1.server channel
+2021-04-06 16:22:26 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 16:22:26 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 16:22:26 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 16:22:26 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 16:22:26 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:68) ]
+INFO:register example1.server channel
+2021-04-06 16:22:26 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:68) ]
+INFO:register example1.server channel
+2021-04-06 16:22:32 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 16:22:32 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 16:22:32 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 16:22:32 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 16:22:32 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 16:22:32 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 16:22:32 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 16:22:32 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 16:22:32 下午 [Thread: serverthread0][ Class:io.metty.codec.ByteToMessageDecoder >> Method: io.metty.codec.ByteToMessageDecoder.init(ByteToMessageDecoder.java:122) ]
+INFO:init delimiters
+2021-04-06 16:22:32 下午 [Thread: serverthread0][ Class:io.metty.codec.ByteToMessageDecoder >> Method: io.metty.codec.ByteToMessageDecoder.init(ByteToMessageDecoder.java:122) ]
+INFO:init delimiters
+2021-04-06 16:22:32 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 16:22:32 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 17:14:44 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 17:14:44 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   serverthread0------start
+2021-04-06 17:14:44 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 17:14:44 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 17:14:45 下午 [Thread: main][ Class:io.bootstrap.AbstractNioBootStrap >> Method: io.bootstrap.AbstractNioBootStrap$DefaultChannelFactory.newChannel(AbstractNioBootStrap.java:50) ]
+INFO:factory new channel success 
+2021-04-06 17:14:45 下午 [Thread: main][ Class:io.bootstrap.AbstractNioBootStrap >> Method: io.bootstrap.AbstractNioBootStrap$DefaultChannelFactory.newChannel(AbstractNioBootStrap.java:50) ]
+INFO:factory new channel success 
+2021-04-06 17:14:45 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:68) ]
+INFO:register example1.server channel
+2021-04-06 17:14:45 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:68) ]
+INFO:register example1.server channel
+2021-04-06 17:14:54 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 17:14:54 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:77) ]
+INFO:thread:   workerthread0------start
+2021-04-06 17:14:54 下午 [Thread: main][ Class:io.bootstrap.AbstractNioBootStrap >> Method: io.bootstrap.AbstractNioBootStrap$DefaultChannelFactory.newChannel(AbstractNioBootStrap.java:50) ]
+INFO:factory new channel success 
+2021-04-06 17:14:54 下午 [Thread: main][ Class:io.bootstrap.AbstractNioBootStrap >> Method: io.bootstrap.AbstractNioBootStrap$DefaultChannelFactory.newChannel(AbstractNioBootStrap.java:50) ]
+INFO:factory new channel success 
+2021-04-06 17:14:54 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 17:14:54 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 17:14:54 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 17:14:54 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 17:14:54 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 17:14:54 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 17:14:54 下午 [Thread: serverthread0][ Class:io.metty.codec.ByteToMessageDecoder >> Method: io.metty.codec.ByteToMessageDecoder.init(ByteToMessageDecoder.java:122) ]
+INFO:init delimiters
+2021-04-06 17:14:54 下午 [Thread: serverthread0][ Class:io.metty.codec.ByteToMessageDecoder >> Method: io.metty.codec.ByteToMessageDecoder.init(ByteToMessageDecoder.java:122) ]
+INFO:init delimiters
+2021-04-06 17:14:54 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 17:14:54 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel

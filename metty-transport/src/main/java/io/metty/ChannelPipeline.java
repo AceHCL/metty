@@ -20,10 +20,15 @@ public interface ChannelPipeline extends ChannelInboundInvoker, ChannelOutboundI
 
     void addFirst(ChannelHandler channelHandler);
 
+    void remove(ChannelHandler channelHandler);
+
     Channel channel();
 
     @Override
     ChannelPipeline flush();
+
+    @Override
+    ChannelPipeline firechannelRegistered();
 
     @Override
     ChannelPipeline fireChannelRead(Object msg);

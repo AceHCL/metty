@@ -20,7 +20,7 @@ public class NioServerBootstrap extends AbstractNioBootStrap{
     public void start(){
         for (int i = 0; i < 1 ; i++) {
             try {
-                NioServerSocketChannel nioServerSocketChannel = new NioServerSocketChannel();
+                NioServerSocketChannel nioServerSocketChannel = (NioServerSocketChannel) factory.newChannel();
                 nioServerSocketChannel.bind(inetSocketAddress);
                 NioBossEventLoop nioBossEventLoop = (NioBossEventLoop) this.nextBossEventLoop();
                 nioServerSocketChannel.bindEventLoop(nioBossEventLoop);

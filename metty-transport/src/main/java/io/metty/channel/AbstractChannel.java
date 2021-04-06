@@ -51,6 +51,10 @@ public abstract class AbstractChannel implements Channel {
         pipeline.firechannelActive();
         return this;
     }
+    public Channel channelRegistered(){
+        pipeline.firechannelRegistered();
+        return this;
+    }
 
     public Channel finishConnected(){
         return this;

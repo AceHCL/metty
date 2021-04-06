@@ -1,12 +1,9 @@
 package io.metty.channel;
 
-import com.sun.security.ntlm.Server;
-
 import java.io.IOException;
-import java.net.InetSocketAddress;
-import java.net.ServerSocket;
 import java.net.SocketAddress;
-import java.nio.channels.*;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;
 
 /**
  * 描述:
