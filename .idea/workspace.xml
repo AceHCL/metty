@@ -4,166 +4,18 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac2c7692-3406-417e-83bb-f92f9a45aa7e" name="Default Changelist" comment="finish: encoder ,decoder,example,init channel method&#10;todo : serializable ,protobuf">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-common/src/main/java/io/metty/util/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-common/target/classes/io/metty/executor/ExecutorFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-common/target/classes/io/metty/util/Utils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/src/main/java/example1/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/src/main/java/example1/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/src/main/java/example2/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/src/main/java/example2/client/OutHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/src/main/java/example2/server/InHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/src/main/java/example2/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/src/main/java/example3/People.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/src/main/java/example3/client/OutHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/src/main/java/example3/server/InHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example1/client/Client$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example1/client/Client.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example1/client/OutHandler1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example1/client/OutHandler2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example1/server/InHandler1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example1/server/InHandler2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example1/server/Server$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example1/server/Server.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example2/client/Client$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example2/client/Client.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example2/client/OutHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example2/server/InHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example2/server/Server$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example2/server/Server.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example3/People.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example3/client/Client$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example3/client/Client.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example3/client/OutHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example3/server/InHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example3/server/Server$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/example3/server/Server.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-example/target/classes/util/Util.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/ChannelOutBoundByteHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/MessageToByteEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/encoder/DelimiterBasedFrameEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/encoder/LineBaseFrameEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/encoder/LineFieldFrameEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/others/StringDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/others/StringEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/handler/ChannelInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/handler/ChannelStateHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/handler/ChannelStateHandlerAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/java/proto/entries/PersonMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/src/main/proto/PersonMsg.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/src/test/java/serializable/People.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/src/test/java/serializable/ProtoBufTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/src/test/java/serializable/result" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/PersonMsg.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/bootstrap/AbstractNioBootStrap$ChannelFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/bootstrap/AbstractNioBootStrap$DefaultChannelFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/ByteToMessageDecoder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/ChannelInBoundByteHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/ChannelOutBoundByteHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/CodecOutputList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/Cumulator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/MessageToByteEncoder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/decoder/LengthFieldBasedFrameDecoder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/decoder/LineFieldFrameEncoder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/others/StringDecoder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/others/StringEncoder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/handler/ChannelInitializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/handler/ChannelStateHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/handler/ChannelStateHandlerAdapter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/proto/entries/PersonMsg$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/proto/entries/PersonMsg$Person$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/proto/entries/PersonMsg$Person$Builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/proto/entries/PersonMsg$Person.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/proto/entries/PersonMsg$PersonOrBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/classes/proto/entries/PersonMsg.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/maven-status/maven-compiler-plugin/compile/default-cli/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/maven-status/maven-compiler-plugin/compile/default-cli/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/any.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/api.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/compiler/plugin.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/descriptor.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/duration.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/empty.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/field_mask.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/source_context.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/struct.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/timestamp.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/type.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-dependencies/1107563bb619315afb9718a9b7147fb5/google/protobuf/wrappers.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/protoc-plugins/protoc-3.3.0-osx-x86_64.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/test-classes/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/test-classes/serializable/People.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metty-transport/target/test-classes/serializable/ProtoBufTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/io/metty/log/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/io/metty/log/debug.log_2021-04-01.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="ac2c7692-3406-417e-83bb-f92f9a45aa7e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/src/main/java/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/src/main/java/example3/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/src/main/java/client/OutHandler1.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/src/main/java/example1/client/OutHandler1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/src/main/java/client/OutHandler2.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/src/main/java/example1/client/OutHandler2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/src/main/java/server/InHandler1.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/src/main/java/example1/server/InHandler1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/src/main/java/server/InHandler2.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/src/main/java/example1/server/InHandler2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/src/main/java/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-example/src/main/java/example3/server/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/target/classes/client/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/target/classes/client/OutHandler1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/target/classes/client/OutHandler2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/target/classes/server/InHandler1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/target/classes/server/InHandler2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-example/target/classes/server/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/AbstractNioBootStrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/AbstractNioBootStrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/Bootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/NioBootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/NioBootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/NioServerBootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/bootstrap/NioServerBootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/ChannelContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/ChannelContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/ChannelHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/ChannelHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/ChannelPipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/ChannelPipeline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/AbstractChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/AbstractChannel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/NioServerSocketChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/channel/NioServerSocketChannel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/ByteToMessageDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/ByteToMessageDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/decoder/DelimiterBasedFrameDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/decoder/DelimiterBasedFrameDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/decoder/LengthFieldBasedFrameDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/codec/decoder/LengthFieldBasedFrameDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/NioBossEventLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/NioBossEventLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/metty-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-common/src/main/java/io/metty/executor/ExecutorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-common/src/main/java/io/metty/executor/ExecutorFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-common/target/classes/io/metty/executor/ExecutorFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-common/target/classes/io/metty/executor/ExecutorFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/AbstractNioEventLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/AbstractNioEventLoop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/NioWorkerEventLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/eventloop/NioWorkerEventLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/invoke/ChannelInboundInvoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/invoke/ChannelInboundInvoker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/pipeline/DefaultChannelContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/pipeline/DefaultChannelContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/pipeline/DefaultChannelPipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/java/io/metty/pipeline/DefaultChannelPipeline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/src/test/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/src/test/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/bootstrap/AbstractNioBootStrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/bootstrap/AbstractNioBootStrap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/bootstrap/Bootstrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/bootstrap/Bootstrap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/bootstrap/NioBootstrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/bootstrap/NioBootstrap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/bootstrap/NioServerBootstrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/bootstrap/NioServerBootstrap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/ChannelContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/ChannelContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/ChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/ChannelHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/ChannelPipeline.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/ChannelPipeline.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/AbstractChannel$AbstractUnsafe.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/AbstractChannel$AbstractUnsafe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/AbstractChannel.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/AbstractChannel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/NioServerSocketChannel$NioMessageUnsafe.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/NioServerSocketChannel$NioMessageUnsafe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/NioServerSocketChannel.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/NioServerSocketChannel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/NioSocketChannel$NioSocketChannelUnsafe.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/NioSocketChannel$NioSocketChannelUnsafe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/NioSocketChannel.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/channel/NioSocketChannel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/decoder/DelimiterBasedFrameDecoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/decoder/DelimiterBasedFrameDecoder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/NioBossEventLoop$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/NioBossEventLoop$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/NioBossEventLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/NioBossEventLoop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/NioWorkerEventLoop$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/NioWorkerEventLoop$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/NioWorkerEventLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/NioWorkerEventLoop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/invoke/ChannelInboundInvoker.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/invoke/ChannelInboundInvoker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/pipeline/DefaultChannelContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/pipeline/DefaultChannelContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/pipeline/DefaultChannelPipeline$HeadHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/pipeline/DefaultChannelPipeline$HeadHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/pipeline/DefaultChannelPipeline$TailHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/pipeline/DefaultChannelPipeline$TailHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/pipeline/DefaultChannelPipeline.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/pipeline/DefaultChannelPipeline.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/decoder/LengthFieldBasedFrameDecoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/decoder/LengthFieldBasedFrameDecoder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/codec/decoder/LineFieldFrameEncoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/AbstractNioEventLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/io/metty/eventloop/AbstractNioEventLoop.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/metty-transport/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/metty-transport/target/classes/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hp/log/debug.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hp/log/debug.log_2021-03-31.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hp/log/error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hp/log/info.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hp/log/info.log_2021-03-31.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hp/log/warn.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hp/log/warn.log_2021-03-31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/metty/log/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/metty/log/debug.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -363,7 +215,7 @@
       <workItem from="1617263206135" duration="1045000" />
       <workItem from="1617264302970" duration="12672000" />
       <workItem from="1617281499011" duration="3677000" />
-      <workItem from="1617686505241" duration="12889000" />
+      <workItem from="1617686505241" duration="14045000" />
     </task>
     <task id="LOCAL-00001" summary="finish connect handler">
       <created>1617183402842</created>
@@ -379,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617249702742</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finish: encoder ,decoder,example,init channel method&#10;todo : serializable ,protobuf">
+      <created>1617702220084</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617702220084</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,10 +252,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="finish: encoder ,decoder,example,init channel method&#10;todo : serializable ,protobuf" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1472" y="-59" key="#Project_Structure" timestamp="1617270725284">
+    <state x="-1472" y="-59" key="#Project_Structure" timestamp="1617703032680">
       <screen x="-1920" y="-180" width="1920" height="1080" />
     </state>
-    <state x="-1472" y="-59" key="#Project_Structure/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617270725284" />
+    <state x="-1472" y="-59" key="#Project_Structure/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617703032680" />
     <state x="-1147" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1617701370466">
       <screen x="-1920" y="-180" width="1920" height="1080" />
     </state>
@@ -405,30 +264,30 @@
       <screen x="-1920" y="-180" width="1920" height="1080" />
     </state>
     <state x="-1350" y="291" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617696475558" />
-    <state x="-1616" y="-68" key="CommitChangelistDialog2" timestamp="1617702148648">
+    <state x="-1616" y="-68" key="CommitChangelistDialog2" timestamp="1617702219641">
       <screen x="-1920" y="-180" width="1920" height="1080" />
     </state>
     <state x="-1616" y="-68" key="CommitChangelistDialog2/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617700887378" />
-    <state x="-1616" y="-68" key="CommitChangelistDialog2/0.23.1440.877/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617702148648" />
-    <state width="1878" height="172" key="GridCell.Tab.0.bottom" timestamp="1617700922719">
+    <state x="-1616" y="-68" key="CommitChangelistDialog2/0.23.1440.877/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617702219641" />
+    <state width="1878" height="222" key="GridCell.Tab.0.bottom" timestamp="1617702957448">
       <screen x="-1920" y="-180" width="1920" height="1080" />
     </state>
-    <state width="1878" height="172" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617700922719" />
+    <state width="1878" height="222" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617702957448" />
     <state width="1878" height="88" key="GridCell.Tab.0.bottom/0.23.1440.877/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617698864613" />
-    <state width="1878" height="172" key="GridCell.Tab.0.center" timestamp="1617700922715">
+    <state width="1878" height="222" key="GridCell.Tab.0.center" timestamp="1617702957446">
       <screen x="-1920" y="-180" width="1920" height="1080" />
     </state>
-    <state width="1878" height="172" key="GridCell.Tab.0.center/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617700922715" />
+    <state width="1878" height="222" key="GridCell.Tab.0.center/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617702957446" />
     <state width="1878" height="88" key="GridCell.Tab.0.center/0.23.1440.877/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617698864610" />
-    <state width="1878" height="172" key="GridCell.Tab.0.left" timestamp="1617700922715">
+    <state width="1878" height="222" key="GridCell.Tab.0.left" timestamp="1617702957445">
       <screen x="-1920" y="-180" width="1920" height="1080" />
     </state>
-    <state width="1878" height="172" key="GridCell.Tab.0.left/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617700922715" />
+    <state width="1878" height="222" key="GridCell.Tab.0.left/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617702957445" />
     <state width="1878" height="88" key="GridCell.Tab.0.left/0.23.1440.877/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617698864608" />
-    <state width="1878" height="172" key="GridCell.Tab.0.right" timestamp="1617700922718">
+    <state width="1878" height="222" key="GridCell.Tab.0.right" timestamp="1617702957447">
       <screen x="-1920" y="-180" width="1920" height="1080" />
     </state>
-    <state width="1878" height="172" key="GridCell.Tab.0.right/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617700922718" />
+    <state width="1878" height="222" key="GridCell.Tab.0.right/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617702957447" />
     <state width="1878" height="88" key="GridCell.Tab.0.right/0.23.1440.877/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617698864612" />
     <state width="1878" height="194" key="GridCell.Tab.1.bottom" timestamp="1617695602892">
       <screen x="-1920" y="-180" width="1920" height="1080" />
@@ -446,19 +305,23 @@
       <screen x="-1920" y="-180" width="1920" height="1080" />
     </state>
     <state width="1878" height="194" key="GridCell.Tab.1.right/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617695602891" />
-    <state x="-1372" y="102" key="IDE.errors.dialog" timestamp="1617281414587">
+    <state x="-1372" y="102" key="IDE.errors.dialog" timestamp="1617702856556">
       <screen x="-1920" y="-180" width="1920" height="1080" />
     </state>
-    <state x="-1372" y="102" key="IDE.errors.dialog/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617281414587" />
-    <state x="-1422" y="22" key="Maven.ArtifactSearchDialog" timestamp="1617265007731">
+    <state x="-1372" y="102" key="IDE.errors.dialog/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617702856556" />
+    <state x="-1422" y="22" key="Maven.ArtifactSearchDialog" timestamp="1617703358319">
       <screen x="-1920" y="-180" width="1920" height="1080" />
     </state>
-    <state x="-1422" y="22" key="Maven.ArtifactSearchDialog/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617265007731" />
+    <state x="-1422" y="22" key="Maven.ArtifactSearchDialog/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617703358319" />
     <state x="-1548" y="-3" key="SettingsEditor" timestamp="1617281471418">
       <screen x="-1920" y="-180" width="1920" height="1080" />
     </state>
     <state x="-1548" y="-3" key="SettingsEditor/0.0.1440.900/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617281471418" />
     <state x="-1548" y="-3" key="SettingsEditor/0.23.1440.877/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617264268291" />
+    <state x="-1360" y="100" key="Vcs.Push.Dialog.v2" timestamp="1617702230676">
+      <screen x="-1920" y="-180" width="1920" height="1080" />
+    </state>
+    <state x="-1360" y="100" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-180.1920.1080@-1920.-180.1920.1080" timestamp="1617702230676" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

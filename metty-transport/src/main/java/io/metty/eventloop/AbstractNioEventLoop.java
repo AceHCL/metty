@@ -1,6 +1,7 @@
 package io.metty.eventloop;
 
 import io.metty.channel.AbstractChannel;
+import io.metty.executor.ExecutorFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -44,7 +45,7 @@ public abstract class AbstractNioEventLoop implements Runnable {
 
     public AbstractNioEventLoop(AbstractNioEventLoopGroup parent, Executor executor, String threadName) {
         if (executor == null){
-            executor = Executors.newSingleThreadExecutor();
+            executor = ExecutorFactory.newExecutor();
         }
         this.parent = parent;
         this.executor = executor;

@@ -640,3 +640,59 @@ INFO:init delimiters
 INFO:register  clientchannel
 2021-04-06 17:14:54 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
 INFO:register  clientchannel
+2021-04-06 17:52:55 下午 [Thread: main][ Class:io.metty.executor.ExecutorFactory >> Method: io.metty.executor.ExecutorFactory.newExecutor(ExecutorFactory.java:19) ]
+INFO:create a new executor
+2021-04-06 17:52:55 下午 [Thread: main][ Class:io.metty.executor.ExecutorFactory >> Method: io.metty.executor.ExecutorFactory.newExecutor(ExecutorFactory.java:19) ]
+INFO:create a new executor
+2021-04-06 17:52:55 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:78) ]
+INFO:thread:   serverthread0------start
+2021-04-06 17:52:55 下午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:78) ]
+INFO:thread:   serverthread0------start
+2021-04-06 17:52:55 下午 [Thread: main][ Class:io.metty.executor.ExecutorFactory >> Method: io.metty.executor.ExecutorFactory.newExecutor(ExecutorFactory.java:19) ]
+INFO:create a new executor
+2021-04-06 17:52:55 下午 [Thread: main][ Class:io.metty.executor.ExecutorFactory >> Method: io.metty.executor.ExecutorFactory.newExecutor(ExecutorFactory.java:19) ]
+INFO:create a new executor
+2021-04-06 17:52:55 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:78) ]
+INFO:thread:   workerthread0------start
+2021-04-06 17:52:55 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:78) ]
+INFO:thread:   workerthread0------start
+2021-04-06 17:52:55 下午 [Thread: main][ Class:io.bootstrap.AbstractNioBootStrap >> Method: io.bootstrap.AbstractNioBootStrap$DefaultChannelFactory.newChannel(AbstractNioBootStrap.java:50) ]
+INFO:factory new channel success 
+2021-04-06 17:52:55 下午 [Thread: main][ Class:io.bootstrap.AbstractNioBootStrap >> Method: io.bootstrap.AbstractNioBootStrap$DefaultChannelFactory.newChannel(AbstractNioBootStrap.java:50) ]
+INFO:factory new channel success 
+2021-04-06 17:52:55 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:68) ]
+INFO:register example1.server channel
+2021-04-06 17:52:55 下午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:68) ]
+INFO:register example1.server channel
+2021-04-06 17:53:05 下午 [Thread: main][ Class:io.metty.executor.ExecutorFactory >> Method: io.metty.executor.ExecutorFactory.newExecutor(ExecutorFactory.java:19) ]
+INFO:create a new executor
+2021-04-06 17:53:05 下午 [Thread: main][ Class:io.metty.executor.ExecutorFactory >> Method: io.metty.executor.ExecutorFactory.newExecutor(ExecutorFactory.java:19) ]
+INFO:create a new executor
+2021-04-06 17:53:05 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:78) ]
+INFO:thread:   workerthread0------start
+2021-04-06 17:53:05 下午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:78) ]
+INFO:thread:   workerthread0------start
+2021-04-06 17:53:05 下午 [Thread: main][ Class:io.bootstrap.AbstractNioBootStrap >> Method: io.bootstrap.AbstractNioBootStrap$DefaultChannelFactory.newChannel(AbstractNioBootStrap.java:50) ]
+INFO:factory new channel success 
+2021-04-06 17:53:05 下午 [Thread: main][ Class:io.bootstrap.AbstractNioBootStrap >> Method: io.bootstrap.AbstractNioBootStrap$DefaultChannelFactory.newChannel(AbstractNioBootStrap.java:50) ]
+INFO:factory new channel success 
+2021-04-06 17:53:05 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 17:53:05 下午 [Thread: main][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 17:53:05 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 17:53:05 下午 [Thread: workerthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.process(NioWorkerEventLoop.java:50) ]
+INFO:socketchannel connected
+2021-04-06 17:53:05 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 17:53:05 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:53) ]
+INFO:finishConnected
+2021-04-06 17:53:05 下午 [Thread: serverthread0][ Class:io.metty.codec.ByteToMessageDecoder >> Method: io.metty.codec.ByteToMessageDecoder.init(ByteToMessageDecoder.java:122) ]
+INFO:init delimiters
+2021-04-06 17:53:05 下午 [Thread: serverthread0][ Class:io.metty.codec.ByteToMessageDecoder >> Method: io.metty.codec.ByteToMessageDecoder.init(ByteToMessageDecoder.java:122) ]
+INFO:init delimiters
+2021-04-06 17:53:05 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel
+2021-04-06 17:53:05 下午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:64) ]
+INFO:register  clientchannel

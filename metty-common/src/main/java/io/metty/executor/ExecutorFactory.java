@@ -1,9 +1,9 @@
 package io.metty.executor;
 
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.Executor;
-import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.ThreadPoolExecutor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.util.concurrent.*;
 
 /**
  * 描述:
@@ -13,7 +13,12 @@ import java.util.concurrent.ThreadPoolExecutor;
  */
 public class ExecutorFactory {
 
+    private static final Logger logger = LoggerFactory.getLogger(ExecutorFactory.class);
+
     public static final Executor newExecutor(){
-        return null;
+        logger.info("create a new executor");
+        ArrayBlockingQueue arrayBlockingQueue = new ArrayBlockingQueue(50000);
+        ThreadPoolExecutor executor = new ThreadPoolExecutor(1,1, 10,TimeUnit.SECONDS,arrayBlockingQueue, new ThreadPoolExecutor.DiscardPolicy());
+        return executor;
     }
 }
