@@ -1,8 +1,14 @@
 package io.bootstrap;
 
+import io.heart.HeartHandler;
+import io.heart.PingHandler;
 import io.metty.channel.NioServerSocketChannel;
 import io.metty.eventloop.*;
 import io.metty.NioEventLoop;
+
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 import static java.util.Objects.requireNonNull;
 
@@ -15,6 +21,12 @@ import static java.util.Objects.requireNonNull;
 public class NioServerBootstrap extends AbstractNioBootStrap{
 
     private NioWorkerEventLoopGroup nioWorkerEventLoopGroup;
+    private final ScheduledExecutorService schedulePingService = Executors.newSingleThreadScheduledExecutor();
+    public final PingHandler pingHandler = new PingHandler();
+
+    public NioServerBootstrap() {
+        schedulePingService.scheduleAtFixedRate(pingHandler,10,9, TimeUnit.SECONDS);
+    }
 
     @Override
     public void start(){

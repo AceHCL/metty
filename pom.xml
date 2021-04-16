@@ -12,6 +12,7 @@
         <module>metty-transport</module>
         <module>metty-example</module>
         <module>metty-common</module>
+        <module>metty-connect</module>
     </modules>
     <properties>
         <log.version>1.7.2</log.version>

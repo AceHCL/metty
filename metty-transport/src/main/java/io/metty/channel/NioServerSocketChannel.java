@@ -60,7 +60,7 @@ public class NioServerSocketChannel extends AbstractNioChannel  {
     }
 
     @Override
-    protected void doBeginRead() throws Exception {
+    protected void doBeginRead(){
 
     }
 
@@ -91,6 +91,4 @@ public class NioServerSocketChannel extends AbstractNioChannel  {
 
         }
     }
-
-
 }

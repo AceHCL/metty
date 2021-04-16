@@ -12,7 +12,6 @@ import java.util.Queue;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.Executor;
-import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 
@@ -23,7 +22,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * @create 2021-03-14 9:31 PM
  */
 public abstract class AbstractNioEventLoop implements Runnable {
-    private static final Logger log = LoggerFactory.getLogger(AbstractNioEventLoop.class);
+    private static final Logger logger = LoggerFactory.getLogger(AbstractNioEventLoop.class);
     private final Executor executor;
 
     protected final AbstractNioEventLoopGroup parent;
@@ -56,6 +55,7 @@ public abstract class AbstractNioEventLoop implements Runnable {
     private void openSelector() {
         try {
             this.selector = Selector.open();
+            logger.info("selector open");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -75,7 +75,7 @@ public abstract class AbstractNioEventLoop implements Runnable {
     @Override
     public void run() {
         Thread.currentThread().setName(this.threadName);
-        log.info("thread:   "+this.threadName+"------start");
+        logger.info("thread:   "+this.threadName+"------start");
         while (true){
             try {
                 wakeUp.set(false);

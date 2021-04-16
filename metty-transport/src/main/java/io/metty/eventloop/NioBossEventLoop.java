@@ -1,5 +1,6 @@
 package io.metty.eventloop;
 
+import io.bootstrap.NioServerBootstrap;
 import io.metty.BossEventLoop;
 import io.metty.channel.NioServerSocketChannel;
 import io.metty.channel.NioSocketChannel;
@@ -50,11 +51,13 @@ public class NioBossEventLoop extends AbstractNioEventLoop implements BossEventL
                 NioServerSocketChannel nioServerSocketChannel = (NioServerSocketChannel) this.map.get(serverSocketChannel);
                 //新客户端
                 NioSocketChannel nioSocketChannel = nioServerSocketChannel.accept();
+                NioServerBootstrap nioServerBootstrap = (NioServerBootstrap) parent.getBootstrap();
                 log.info("finishConnected",nioSocketChannel);
-                nioSocketChannel.pipeline().addLast(parent.getBootstrap().getChannelHandler());
+                nioSocketChannel.pipeline().addLast(nioServerBootstrap.getChannelHandler());
                 nioSocketChannel.channelRegistered();
-                NioWorkerEventLoop nioWorkerEventLoop = (NioWorkerEventLoop) parent.getBootstrap().nextWorkerEventLoop();
+                NioWorkerEventLoop nioWorkerEventLoop = (NioWorkerEventLoop) nioServerBootstrap.nextWorkerEventLoop();
                 nioSocketChannel.bindEventLoop(nioWorkerEventLoop);
+                nioServerBootstrap.pingHandler.set(nioSocketChannel);
                 nioWorkerEventLoop.map.put(nioSocketChannel.getSocketChannel(),nioSocketChannel);
                 //注册新客户端接入任务
                 nioWorkerEventLoop.registerChannelTask(nioSocketChannel,SelectionKey.OP_READ);

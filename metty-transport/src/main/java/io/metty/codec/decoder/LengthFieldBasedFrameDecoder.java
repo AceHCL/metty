@@ -36,7 +36,7 @@ public class LengthFieldBasedFrameDecoder extends ByteToMessageDecoder {
     }
 
     private Object decode(ChannelContext ctx, ByteBuffer in) {
-        if (in.remaining() >= lengthFieldLength){
+        if (in.remaining() > lengthFieldLength){
             byte[] lengthBytes = new byte[lengthFieldLength];
             int position = in.position();
             in.mark();

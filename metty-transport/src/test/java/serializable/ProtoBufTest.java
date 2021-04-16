@@ -4,6 +4,9 @@ import org.junit.Test;
 import proto.entries.PersonMsg;
 
 import java.io.*;
+import java.util.ConcurrentModificationException;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * 描述:
@@ -103,5 +106,11 @@ public class ProtoBufTest {
                 (byte) (a & 0xFF)
         };
     }
+
+    @Test
+    public void threadTest(){
+
+    }
+
 
 }

@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.nio.ByteBuffer;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
@@ -46,6 +47,9 @@ public class NioWorkerEventLoop extends AbstractNioEventLoop implements WorkerEv
             iterator.remove();
             SocketChannel socketChannel = (SocketChannel) key.channel();
             NioSocketChannel nioSocketChannel = (NioSocketChannel) this.map.get(socketChannel);
+            if (!key.isValid()){
+                continue;
+            }
             if (key.isConnectable()){
                 log.info("socketchannel connected");
                 if (socketChannel.finishConnect()){
@@ -60,7 +64,7 @@ public class NioWorkerEventLoop extends AbstractNioEventLoop implements WorkerEv
     }
 
     @Override
-    public void registerChannelTask(final NioSocketChannel nioSocketChannel, int opts) {
+    public void registerChannelTask(final NioSocketChannel nioSocketChannel, final int opts) {
         log.info("register  clientchannel");
         final Selector selector = this.selector;
         registerTask(new Runnable() {
@@ -68,9 +72,19 @@ public class NioWorkerEventLoop extends AbstractNioEventLoop implements WorkerEv
             public void run() {
                 try {
                     nioSocketChannel.register(selector, opts);
+
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
+            }
+        });
+    }
+
+    public void registerScheduleTask(final NioSocketChannel nioSocketChannel,final ByteBuffer pingBuffer){
+        registerTask(new Runnable() {
+            @Override
+            public void run() {
+                nioSocketChannel.unsafe().write(pingBuffer);
             }
         });
     }

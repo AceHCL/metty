@@ -1,14 +1,15 @@
 package io.metty.channel;
 
-import com.sun.webkit.EventLoop;
 import io.metty.ChannelFuture;
 import io.metty.ChannelPipeline;
 import io.metty.NioEventLoop;
 import io.metty.pipeline.DefaultChannelPipeline;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.net.InetSocketAddress;
-import java.net.Socket;
 import java.net.SocketAddress;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * 描述:
@@ -18,11 +19,13 @@ import java.net.SocketAddress;
  */
 public abstract class AbstractChannel implements Channel {
 
+    private static final Logger logger = LoggerFactory.getLogger(AbstractChannel.class);
+
     private final ChannelPipeline pipeline;
     private final Unsafe unsafe;
     private volatile SocketAddress remoteAddress;
     private volatile SocketAddress localAddress;
-    protected   NioEventLoop nioEventLoop;
+    public NioEventLoop nioEventLoop;
     public void bindEventLoop(NioEventLoop nioEventLoop){
         this.nioEventLoop = nioEventLoop;
     }
@@ -148,7 +151,7 @@ public abstract class AbstractChannel implements Channel {
 
     protected abstract void doConnect(SocketAddress remoteAddress) throws Exception;
 
-    protected abstract void doBeginRead() throws Exception;
+    protected abstract void doBeginRead();
 
     protected abstract AbstractUnsafe newUnsafe();
 
@@ -186,11 +189,7 @@ public abstract class AbstractChannel implements Channel {
 
         @Override
         public void beginRead() {
-            try {
-                doBeginRead();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+            doBeginRead();
         }
     }
 }
