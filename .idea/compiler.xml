@@ -9,6 +9,7 @@
         <module name="metty-common" />
         <module name="metty-transport" />
         <module name="metty-example" />
+        <module name="metty-protocol" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

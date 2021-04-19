@@ -2,6 +2,9 @@ package io.metty.eventloop;
 
 import io.bootstrap.Bootstrap;
 import io.bootstrap.NioBootstrap;
+import io.heart.HeartHandler;
+import io.heart.PingPong;
+import io.heart.PongHandler;
 import io.metty.WorkerEventLoop;
 import io.metty.channel.NioSocketChannel;
 import org.slf4j.Logger;
@@ -64,7 +67,11 @@ public class NioWorkerEventLoop extends AbstractNioEventLoop implements WorkerEv
     }
 
     @Override
-    public void registerChannelTask(final NioSocketChannel nioSocketChannel, final int opts) {
+    public void registerChannelTask(final NioSocketChannel nioSocketChannel, final int opts, PingPong... pingPong) {
+        for (PingPong e:pingPong
+             ) {
+            e.registerChannel(nioSocketChannel);
+        }
         log.info("register  clientchannel");
         final Selector selector = this.selector;
         registerTask(new Runnable() {

@@ -1,13 +1,11 @@
 package io.heart;
 
 import io.metty.channel.NioSocketChannel;
-import io.netty.util.internal.ConcurrentSet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.concurrent.ConcurrentSkipListSet;
 
 /**
  * 描述:
@@ -15,7 +13,7 @@ import java.util.concurrent.ConcurrentSkipListSet;
  * @author ace-huang
  * @create 2021-04-16 5:13 下午
  */
-public class PingHandler implements Runnable {
+public class PingHandler implements Runnable, PingPong {
 
     private static final Logger logger = LoggerFactory.getLogger(HeartHandler.class);
 
@@ -27,17 +25,28 @@ public class PingHandler implements Runnable {
 
     @Override
     public void run() {
+
+        if (keySet.isEmpty()){
+            logger.info("--------null client connected",this);
+            return ;
+        }
         logger.info("--------ping,check connected success",this);
         for (NioSocketChannel nioSocketChannel : keySet) {
             if (nioSocketChannel.pingflag.get()){
                 nioSocketChannel.pongflag.set(false);
             }else{
                 try {
+                    keySet.remove(nioSocketChannel);
                     nioSocketChannel.getSocketChannel().close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
         }
+    }
+
+    @Override
+    public void registerChannel(NioSocketChannel nioSocketChannel) {
+        this.keySet.add(nioSocketChannel);
     }
 }

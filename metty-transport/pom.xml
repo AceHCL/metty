@@ -52,11 +52,6 @@
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>io.metty</groupId>
-            <artifactId>metty-connect</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
 
 
     </dependencies>

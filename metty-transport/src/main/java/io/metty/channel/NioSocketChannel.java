@@ -220,6 +220,7 @@ public class NioSocketChannel extends AbstractNioChannel {
                     socketChannel.write(send);
                 }
             } catch (IOException e) {
+                logger.error("socketChannel write error");
                 e.printStackTrace();
             }
         }

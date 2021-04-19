@@ -57,10 +57,9 @@ public class NioBossEventLoop extends AbstractNioEventLoop implements BossEventL
                 nioSocketChannel.channelRegistered();
                 NioWorkerEventLoop nioWorkerEventLoop = (NioWorkerEventLoop) nioServerBootstrap.nextWorkerEventLoop();
                 nioSocketChannel.bindEventLoop(nioWorkerEventLoop);
-                nioServerBootstrap.pingHandler.set(nioSocketChannel);
                 nioWorkerEventLoop.map.put(nioSocketChannel.getSocketChannel(),nioSocketChannel);
                 //注册新客户端接入任务
-                nioWorkerEventLoop.registerChannelTask(nioSocketChannel,SelectionKey.OP_READ);
+                nioWorkerEventLoop.registerChannelTask(nioSocketChannel,SelectionKey.OP_READ,nioServerBootstrap.pingHandler);
             }
         }
 

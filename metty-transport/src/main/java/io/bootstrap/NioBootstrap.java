@@ -61,9 +61,7 @@ public class NioBootstrap extends AbstractNioBootStrap{
         NioWorkerEventLoop nioWorkerEventLoop = (NioWorkerEventLoop) this.nextWorkerEventLoop();
         nioSocketChannel.bindEventLoop(nioWorkerEventLoop);
         nioWorkerEventLoop.mapPut(nioSocketChannel.getSocketChannel(),nioSocketChannel);
-        nioWorkerEventLoop.registerChannelTask(nioSocketChannel, SelectionKey.OP_CONNECT);
-        heartHandler.put(nioSocketChannel);
-        pongHandler.set(nioSocketChannel);
+        nioWorkerEventLoop.registerChannelTask(nioSocketChannel, SelectionKey.OP_CONNECT, pongHandler,heartHandler);
         logger.info("add socketchannel to heartHandler",this);
     }
 }
