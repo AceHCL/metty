@@ -19,5 +19,6 @@ public class OutHandler extends ChannelOutBoundHandlerAdpter {
     @Override
     public void channelActive(ChannelContext ctx) throws Exception {
         People people = new People("huangchenglong",23);
+        ctx.write(people);
     }
 }

@@ -1,5 +1,6 @@
 package example3.server;
 
+import example3.People;
 import io.metty.ChannelContext;
 import io.metty.handler.ChannelInBoundHandlerAdapter;
 
@@ -13,6 +14,8 @@ public class InHandler extends ChannelInBoundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelContext ctx, Object msg) throws Exception {
-        System.out.println(msg);
+        People people = (People) msg;
+        System.out.println(people.getName());
+        System.out.print(people.getAge());
     }
 }

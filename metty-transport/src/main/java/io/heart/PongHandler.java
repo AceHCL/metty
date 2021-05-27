@@ -33,15 +33,15 @@ public class PongHandler implements Runnable,PingPong {
         for (NioSocketChannel nioSocketChannel : keySet) {
            if (nioSocketChannel.pongflag.get()){
                nioSocketChannel.pongflag.compareAndSet(true,false);
-           }else{
-               try {
-                   nioSocketChannel.getSocketChannel().close();
-                   keySet.remove(nioSocketChannel);
-               } catch (IOException e) {
-                   e.printStackTrace();
-               }
-               NioWorkerEventLoop nioWorkerEventLoop = (NioWorkerEventLoop) nioSocketChannel.nioEventLoop;
-               nioWorkerEventLoop.registerChannelTask(nioSocketChannel, SelectionKey.OP_CONNECT,this);
+//           }else{
+//               try {
+//                   nioSocketChannel.getSocketChannel().close();
+//                   keySet.remove(nioSocketChannel);
+//               } catch (IOException e) {
+//                   e.printStackTrace();
+//               }
+//               NioWorkerEventLoop nioWorkerEventLoop = (NioWorkerEventLoop) nioSocketChannel.nioEventLoop;
+//               nioWorkerEventLoop.registerChannelTask(nioSocketChannel, SelectionKey.OP_CONNECT,this);
            }
         }
     }

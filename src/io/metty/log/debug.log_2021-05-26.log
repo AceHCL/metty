@@ -1,0 +1,22 @@
+2021-05-27 11:50:58 上午 [Thread: main][ Class:io.metty.executor.ExecutorFactory >> Method: io.metty.executor.ExecutorFactory.newExecutor(ExecutorFactory.java:19) ]
+INFO:create a new executor
+2021-05-27 11:50:58 上午 [Thread: main][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.openSelector(AbstractNioEventLoop.java:58) ]
+INFO:selector open
+2021-05-27 11:50:58 上午 [Thread: serverthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:78) ]
+INFO:thread:   serverthread0------start
+2021-05-27 11:50:58 上午 [Thread: main][ Class:io.metty.executor.ExecutorFactory >> Method: io.metty.executor.ExecutorFactory.newExecutor(ExecutorFactory.java:19) ]
+INFO:create a new executor
+2021-05-27 11:50:58 上午 [Thread: main][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.openSelector(AbstractNioEventLoop.java:58) ]
+INFO:selector open
+2021-05-27 11:50:58 上午 [Thread: workerthread0][ Class:io.metty.eventloop.AbstractNioEventLoop >> Method: io.metty.eventloop.AbstractNioEventLoop.run(AbstractNioEventLoop.java:78) ]
+INFO:thread:   workerthread0------start
+2021-05-27 11:50:58 上午 [Thread: main][ Class:io.bootstrap.AbstractNioBootStrap >> Method: io.bootstrap.AbstractNioBootStrap$DefaultChannelFactory.newChannel(AbstractNioBootStrap.java:50) ]
+INFO:factory new channel success 
+2021-05-27 11:50:58 上午 [Thread: main][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.registerChannelTask(NioBossEventLoop.java:70) ]
+INFO:register example1.server channel
+2021-05-27 11:51:08 上午 [Thread: pool-1-thread-1][ Class:io.heart.HeartHandler >> Method: io.heart.PingHandler.run(PingHandler.java:30) ]
+INFO:--------null client connected
+2021-05-27 11:51:09 上午 [Thread: serverthread0][ Class:io.metty.eventloop.NioBossEventLoop >> Method: io.metty.eventloop.NioBossEventLoop.process(NioBossEventLoop.java:55) ]
+INFO:finishConnected
+2021-05-27 11:51:09 上午 [Thread: serverthread0][ Class:io.metty.eventloop.NioWorkerEventLoop >> Method: io.metty.eventloop.NioWorkerEventLoop.registerChannelTask(NioWorkerEventLoop.java:75) ]
+INFO:register  clientchannel

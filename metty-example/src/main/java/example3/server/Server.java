@@ -9,6 +9,7 @@ import io.metty.eventloop.NioBossEventLoopGroup;
 import io.metty.eventloop.NioEventLoopGroup;
 import io.metty.eventloop.NioWorkerEventLoopGroup;
 import io.metty.handler.ChannelInitializer;
+import io.metty.seriliazble.ArrayToObjectHandler;
 
 /**
  * 描述:
@@ -28,6 +29,7 @@ public class Server {
                 childHandler(new ChannelInitializer<NioSocketChannel>() {
             @Override
             public void initChannel(NioSocketChannel nioSocketChannel) throws Exception {
+                nioSocketChannel.pipeline().addLast(new ArrayToObjectHandler());
                 nioSocketChannel.pipeline().addLast(new InHandler());
             }
         }).start();
